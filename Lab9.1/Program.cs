@@ -21,8 +21,8 @@ namespace Lab9._1
                 Console.WriteLine("Введите код операции:\n     1 - сложение\n     2 - вычитание\n     3 - произведение\n     4 - деление");
                 Console.Write("Ваш выбор: ");
                 int cmd = Convert.ToInt32(Console.ReadLine());
-                try
-                {
+                //try
+                //{
                     switch (cmd)
                     {
                         case 1:
@@ -42,7 +42,7 @@ namespace Lab9._1
                             }
                         case 4:
                             {
-                                Console.WriteLine("Результат: {0}", firstNumber * secondNumber);
+                                Console.WriteLine("Результат: {0}", firstNumber / secondNumber);
                                 break;
                             }
                         default:
@@ -51,11 +51,11 @@ namespace Lab9._1
                                 break;
                             }
                     }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
+                //}
+                //catch (Exception ex)
+                //{
+                //    Console.WriteLine(ex.Message);
+                //}
             }
             catch (Exception ex)
             {
